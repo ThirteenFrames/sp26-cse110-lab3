@@ -1,1 +1,1 @@
-# Lab 2 - Starter
+https://thirteenframes.github.io/CSE_110_Lab2/

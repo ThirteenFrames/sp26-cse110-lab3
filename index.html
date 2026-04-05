@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jack Xiang">  
+    <title>Meeting Minutes</title>
+    <link rel="icon" type="image/png" href="google.png">
+  </head>
+  <body>
+    <header>
+      <h1>Meeting Minutes</h1>
+    </header>
+    <nav>
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="#general">General</a></li>
+        <li><a href="#attendance">Attendance</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#notes">Meeting Notes</a></li>
+        <li><a href="#recordings">Video and Audio Recordings</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="general">
+        <div>
+        <h2>General</h2>
+        <h3> Meeting Date </h3>
+        01/01/2026
+        <h3> Meeting type </h3>
+        <ul>
+          <li><input type="radio" name="meeting-type"> In Person </li>
+          <li><input type="radio" name="meeting-type"> Online </li>
+        </ul>
+        <h3> Meeting Location </h3>
+        <em>Geisel Library</em>
+        <h3> Summary</h3>
+        <img src="whiteboard.png" width="600" alt="whiteboard image">
+        <p>Discuss and brainstorm ideas to implement a <span><b>B2B SAAS AI-powered</b></span> App. </p>
+        <hr>
+        <p>Don't forget most importantly, <i>E = mc<sup>2</sup> + AI</i>. </p>
+        </div>
+      </section>
+      <section id="attendance">
+        <h2>Attendance</h2>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Present?</th>
+          </tr>
+          <tr>
+            <td>Virgil Van Dijk</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>Mohamed Salah</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td>Cody Gakpo</td>
+            <td><input type="checkbox"></td>
+          </tr>
+        </table>
+      </section>
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <ol>
+          <li>Write down ideas in shared whiteboard</li>
+          <li>Vote on best idea</li>
+          <li>Assign roles and decide on steps moving forward</li>
+        </ol>
+        <details>
+          <summary>Some extra things that were discovered <strong>(view at your own risk)</strong></summary>
+          We are officially out of claude credits. RIP. 
+        </details>
+      </section>
+      <section id="recordings">
+        <h2>Video and Audio Recordings</h2>
+        <video src="video.mp4" width="600" controls></video>
+        <br>
+        <audio src="audio.m4a" controls></audio>
+      </section>
+
+      <section id="form">
+        <h2>Form</h2>
+        <form>
+          <fieldset>
+          <label for="first-name">First name:</label><br>
+          <input type="text" id="first-name"><br>
+
+          <label for="last-name">Last name:</label><br>
+          <input type="text" id="last-name"><br>
+
+          <label for="date">Date:</label><br>
+          <input type="date" id="date"><br>
+
+          <label for="age"> Your age:</label><br>
+          <input id="age" list="ages"><br>
+          <datalist id="ages">
+            <option value="0"></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="too old"></option>
+          </datalist>
+
+          <label for="college">Which university/college do you attend:</label><br>
+          <select id="college">
+            <option>UC San Diego</option>
+            <option>Other colleges which are clearly not as good as UC San Diego</option>
+            <option>Not a college student</option>
+          </select>
+
+          <p>What place will Arsenal finish in the Premier League in 25/26?</p>
+          <input type="radio" id="2nd" name="q1">
+          <label for="2nd">2nd</label><br>
+          <input type="radio" id="3rd" name="q1">
+          <label for="3rd">3rd</label><br>
+
+          <p>What trophies will Arsenal win in the 25/26 Season?</p>
+          <input type="checkbox" id="premier-league" name="q2">
+          <label for="premier-league">Premier League</label><br>
+          <input type="checkbox" id="champions-league" name="q2">
+          <label for="champions-league">Champions League</label><br>
+
+          <p>Thomas Edison invented the lightbulb. Your thoughts:</p>
+          <textarea></textarea><br>
+
+          <button>Submit</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      Copyright, 2026. Do not reproduce without permission.
+    </footer>
+  </body>
+</html>
