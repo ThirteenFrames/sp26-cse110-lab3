@@ -7,14 +7,6 @@ assignees: ''
 
 ---
 
----
-name: Bug report
-about: Create a report to help us improve
-title: 'Title'
-labels: bug
-assignees: ''
----
-
 ## Description
 Add a CSS file to decorate the web page. 
 
