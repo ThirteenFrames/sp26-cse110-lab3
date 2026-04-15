@@ -1,5 +1,5 @@
 ---
-name: Add CSS
+name: Jack's template
 about: 'Tasks to do. '
 title: ''
 labels: ''
@@ -7,8 +7,18 @@ assignees: ''
 
 ---
 
+---
+name: Bug report
+about: Create a report to help us improve
+title: 'Title'
+labels: bug
+assignees: ''
+---
+
 ## Description
 Add a CSS file to decorate the web page. 
+
+## Expected total time to complete
 
 ## Checklist
 
