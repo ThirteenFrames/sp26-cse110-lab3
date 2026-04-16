@@ -121,6 +121,10 @@ form.Arsenal {
   margin-top: 20px;
 }
 
+form p {
+  display: block;
+}
+
 form {
   padding: 10px;
   & fieldset {
