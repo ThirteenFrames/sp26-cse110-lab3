@@ -25,6 +25,8 @@ nav {
   min-height: 15dvh;
   max-height: 30dvh;
   margin: 20px 40px 20px 40px;
+  position: relative;
+  display: inline;
 }
 
 nav ul {
@@ -39,6 +41,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
+  display: block;
 }
 
 nav a:hover {
@@ -55,20 +58,32 @@ nav a:active {
   border-width: 5px;
   border-color:  hsla(310, 64%, 39%, 0.552); 
   border-style: solid;
+  border-radius: 8px;
   
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 10px;
   margin-bottom: 0;
   margin-left: 10px;
   margin-right: 10px;
-  border-radius: 8px;
+  
+  position: static;
+}
+
+#attendance {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .form-wrapper {
   background-color: #f0f4f8;
-  
-  border-left: 5px solid blue; /* fallback */
-  border-left: 5px solid oklch(60% 0.15 250); 
+
+  border: 5px solid oklch(60% 0.15 250); 
+
   
   padding: 15px;
   margin-top: 20px;
@@ -84,13 +99,28 @@ video {
   min-width: 1in;
 }
 
-/* CHECKLIST SUMMARY INCLUDED:
-   - Comments: (Used throughout)
-   - rgb(): (Used in #general div)
-   - hex codes: (Used in :root and .form-wrapper)
-   - hsl(): (Used in #general div border)
-   - color names: (Used in :root and h2)
-   - wider-gamut color: (oklch used in .form-wrapper)
-   - css variables and fallbacks: (Used in body color)
-   - background-color: (Used in both div styles)
-*/
+img {
+  max-width: 100%;
+}
+
+audio {
+  max-width: 100%;
+}
+
+form {
+  max-width: 100%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background: white;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #8f7eb2; /* Change color on mobile */
+  }
+}
