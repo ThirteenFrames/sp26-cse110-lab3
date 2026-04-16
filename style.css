@@ -1,0 +1,126 @@
+
+:root {
+  --main-text: #1f2224; 
+  background-color: azure; 
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: var(--main-text, black); /* fallback if no --main-text */
+  margin: auto;
+  padding: 3vw;
+}
+
+header {
+  font-family: 'Sofia', sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  color: color-mix(in oklab, blue, black);
+  font-size: 30pt;
+}
+
+nav {
+  height: 2cm;
+  min-height: 15dvh;
+  max-height: 30dvh;
+  margin: 20px 40px 20px 40px;
+  position: relative;
+  display: inline;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-rows: auto auto;
+  grid-auto-flow: row;
+  gap: 50px;
+  list-style: none;
+  padding: 0px 10px 0px 10px;  
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover {
+  color: chocolate;
+}
+
+nav a:active {
+  color: red;
+}
+
+#general div {
+  background-color: rgb(248, 249, 250); 
+  
+  border-width: 5px;
+  border-color:  hsla(310, 64%, 39%, 0.552); 
+  border-style: solid;
+  border-radius: 8px;
+  
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+  position: static;
+}
+
+#attendance {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.form-wrapper {
+  background-color: #f0f4f8;
+
+  border: 5px solid oklch(60% 0.15 250); 
+
+  
+  padding: 15px;
+  margin-top: 20px;
+}
+
+h2 {
+  color: color(rec2020 0.42 0.01 0.67);
+}
+
+video {
+  max-width: 100%;
+  width: 50rem;
+  min-width: 1in;
+}
+
+img {
+  max-width: 100%;
+}
+
+audio {
+  max-width: 100%;
+}
+
+form {
+  max-width: 100%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background: white;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #8f7eb2; /* Change color on mobile */
+  }
+}
