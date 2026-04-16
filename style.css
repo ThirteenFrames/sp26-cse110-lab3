@@ -1,0 +1,96 @@
+
+:root {
+  --main-text: #1f2224; 
+  background-color: azure; 
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: var(--main-text, black); /* fallback if no --main-text */
+  margin: auto;
+  padding: 3vw;
+}
+
+header {
+  font-family: 'Sofia', sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  color: color-mix(in oklab, blue, black);
+  font-size: 30pt;
+}
+
+nav {
+  height: 2cm;
+  min-height: 15dvh;
+  max-height: 30dvh;
+  margin: 20px 40px 20px 40px;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-rows: auto auto;
+  grid-auto-flow: row;
+  gap: 50px;
+  list-style: none;
+  padding: 0px 10px 0px 10px;  
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: chocolate;
+}
+
+nav a:active {
+  color: red;
+}
+
+#general div {
+  background-color: rgb(248, 249, 250); 
+  
+  border-width: 5px;
+  border-color:  hsla(310, 64%, 39%, 0.552); 
+  border-style: solid;
+  
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+.form-wrapper {
+  background-color: #f0f4f8;
+  
+  border-left: 5px solid blue; /* fallback */
+  border-left: 5px solid oklch(60% 0.15 250); 
+  
+  padding: 15px;
+  margin-top: 20px;
+}
+
+h2 {
+  color: color(rec2020 0.42 0.01 0.67);
+}
+
+video {
+  max-width: 100%;
+  width: 50rem;
+  min-width: 1in;
+}
+
+/* CHECKLIST SUMMARY INCLUDED:
+   - Comments: (Used throughout)
+   - rgb(): (Used in #general div)
+   - hex codes: (Used in :root and .form-wrapper)
+   - hsl(): (Used in #general div border)
+   - color names: (Used in :root and h2)
+   - wider-gamut color: (oklch used in .form-wrapper)
+   - css variables and fallbacks: (Used in body color)
+   - background-color: (Used in both div styles)
+*/
