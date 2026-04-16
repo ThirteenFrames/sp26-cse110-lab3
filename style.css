@@ -1,3 +1,13 @@
+* {
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  font-style: normal;
+}
+
+:hover {
+  font-style: italic;
+}
 
 :root {
   --main-text: #1f2224; 
@@ -10,6 +20,10 @@ body {
   color: var(--main-text, black); /* fallback if no --main-text */
   margin: auto;
   padding: 3vw;
+}
+
+p {
+  display: inline;
 }
 
 header {
@@ -26,7 +40,6 @@ nav {
   max-height: 30dvh;
   margin: 20px 40px 20px 40px;
   position: relative;
-  display: inline;
 }
 
 nav ul {
@@ -44,12 +57,30 @@ nav a {
   display: block;
 }
 
+nav > h2 {
+  text-transform: uppercase;
+} 
+
+section:has(table) {
+  background-color: rgba(0.4, 0.4, 0.3, 0.05);
+}
+
 nav a:hover {
   color: chocolate;
 }
 
 nav a:active {
   color: red;
+}
+
+hr ~ p {
+  color: gray;
+}
+
+h3 + em {
+  color: gray;
+  font-style: oblique;
+  font-weight: bold;
 }
 
 #general div {
@@ -79,41 +110,48 @@ nav a:active {
   align-items: center;
 }
 
-.form-wrapper {
+.Arsenal {
+  font-family: monospace;
+}
+
+form.Arsenal {
   background-color: #f0f4f8;
-
   border: 5px solid oklch(60% 0.15 250); 
-
-  
   padding: 15px;
   margin-top: 20px;
+}
+
+form {
+  padding: 10px;
+  & fieldset {
+    border: none;
+  }
 }
 
 h2 {
   color: color(rec2020 0.42 0.01 0.67);
 }
 
-video {
+[href*="a"] {
+  color: black;
+}
+
+video, img, audio, form {
   max-width: 100%;
+  display: block;
+}
+
+video {
   width: 50rem;
   min-width: 1in;
-}
-
-img {
-  max-width: 100%;
-}
-
-audio {
-  max-width: 100%;
-}
-
-form {
-  max-width: 100%;
 }
 
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;
+  padding: 10px 10px;
+  margin: 0 0;
   background: white;
   width: 100%;
 }
